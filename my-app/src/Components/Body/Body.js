@@ -9,7 +9,7 @@ import BodyData from "./BodyData";
 function createBodyGameInfo(data) {
     return (
         <BodyGameInfo
-            id={data.id}
+            key={data.id}
             console={data.console}
             title={data.title}
             avaliability={data.avaliability}
@@ -36,6 +36,20 @@ function createBodyDescription(data) {
     );
 }
 
+function createBodyTechInfo(data) {
+    return (
+        <BodyTechInfo
+            releaseDate={data.releaseDate}
+            players={data.players}
+            genre={data.genre}
+            publisher={data.publisher}
+            developer={data.developer}
+            gameFileSize={data.gameFileSize}
+            languages={data.languages}
+        />
+    );
+}
+
 const Body = () => {
     return (
         <div>
@@ -43,7 +57,7 @@ const Body = () => {
             {BodyData.map(createBodyGameInfo)}
             <BodyImageCarousel />
             {BodyData.map(createBodyDescription)}
-            <BodyTechInfo />
+            {BodyData.map(createBodyTechInfo)}
         </div>
     );
 };

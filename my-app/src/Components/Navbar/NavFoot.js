@@ -1,28 +1,48 @@
 import React from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import Button from "react-bootstrap/Button";
 
 const NavFoot = () => {
     return (
         <div className="container-fluid text-center nav-foot">
             <ul className="nav-foot">
                 <li className="nav-item dropdown list-inline-item">
-                    <button id="games" className="nav-item foot-button">
-                        Games
-                    </button>
+                    <Dropdown>
+                        <Dropdown.Toggle variant="Primary" id="dropdown-basic">
+                            Games
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Button>Shop Games</Button>
+                            <Button>Sales and deals</Button>
+                            <Button>Coming soon</Button>
+                            <Button>Online Service</Button>
+                            <Button>Mobile Games</Button>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </li>
                 <li className="nav-item dropdown list-inline-item">
-                    <button id="hardware" className="nav-item foot-button">
-                        Hardware
-                    </button>
+                    <Dropdown>
+                        <Dropdown.Toggle variant="Primary" id="dropdown-basic">
+                            Hardware
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Button>Nintendo Switch Lineup</Button>
+                            <Button>Accessories</Button>
+                            <Button>Amiibo</Button>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </li>
                 <li className="nav-item list-inline-item">
-                    <button className="nav-item foot-button">
+                    <Button variant="Primary" className="nav-item foot-button">
                         News & Events
-                    </button>
+                    </Button>
                 </li>
                 <li className="nav-item list-inline-item">
-                    <button className="nav-item foot-button">
+                    <Button variant="Primary" className="nav-item foot-button">
                         Play Nintendo
-                    </button>
+                    </Button>
                 </li>
             </ul>
         </div>

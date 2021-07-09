@@ -5,7 +5,9 @@ export default function BodyDescription(props) {
         <div className="body-description">
             <h1>{props.descriptionTitle}</h1>
             <p>{props.descriptionBody}</p>
-            <button>Explore this game's official site &gt;</button>
+            <button className="styled-button">
+                Explore this game's official site &gt;
+            </button>
         </div>
     );
 }

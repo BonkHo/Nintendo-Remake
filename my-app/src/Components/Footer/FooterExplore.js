@@ -5,14 +5,16 @@ const FooterExplore = () => {
         <div className="footer-explore">
             <ul>
                 <li>
-                    Games
-                    <ul>Coming Soon</ul>
-                    <ul>Nintendo Switch</ul>
-                    <ul>Wii U</ul>
-                    <ul>Nintendo 3DS</ul>
+                    <p>Games</p>
+                    <li>
+                        <ul>Coming Soon</ul>
+                        <ul>Nintendo Switch</ul>
+                        <ul>Wii U</ul>
+                        <ul>Nintendo 3DS</ul>
+                    </li>
                 </li>
                 <li>
-                    Explore More
+                    <p>Explore More</p>
                     <ul>Game Guide</ul>
                     <ul>All Mario Games</ul>
                     <ul>Games for Any Age</ul>

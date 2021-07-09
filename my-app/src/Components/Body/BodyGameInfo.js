@@ -18,9 +18,11 @@ const BodyGameInfo = (props) => {
                 </div>
                 <div className="price-purchase-container">
                     <h2 id="price" className="price">
-                        {props.price}
+                        ${props.price}
                     </h2>
-                    <button className="purchase-button">Buy Digital</button>
+                    <button className="purchase-button styled-button">
+                        Buy Digital
+                    </button>
                 </div>
             </div>
         </div>

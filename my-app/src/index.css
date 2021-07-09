@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.styled-button {
+    color: white;
+    background-color: #ce181e;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    border: transparent;
+    height: 100%;
+}
+
 .big-picture {
     display: block;
     margin-left: auto;
@@ -88,4 +98,109 @@
 
 .body-description h1 {
     font-size: 25px;
+}
+
+.body-tech-info {
+    color: #484848;
+}
+
+.tech-boxes {
+    display: grid;
+    grid-auto-columns: 50fr 50fr;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 6% 14% 3% 14%;
+}
+
+.tech-boxes > div:nth-child(2n + 1) {
+    background-color: #efefef;
+}
+
+.tech-boxes > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: left;
+    align-items: center;
+}
+
+.tech-boxes > div > span {
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+.tech-boxes > div > div {
+    padding-left: 5%;
+}
+
+.online {
+    background-color: #efefef;
+    display: grid;
+    grid-template-rows: 85.2083px 86px;
+    grid-template-columns: 230.292px 465.597px 465.597px;
+    grid-template-areas:
+        "logo description learnmore"
+        "label buttons buttons";
+    margin: 5%;
+    padding: 3%;
+}
+
+.online > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.online > .logo {
+    grid-area: "logo";
+}
+
+.online > .description {
+    grid-area: "description";
+    padding: 10%;
+}
+
+.online > .learnmore {
+    grid-area: "learnmore";
+    align-items: left;
+    justify-content: left;
+}
+
+.online > .label > {
+    grid-area: "label";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.online > .buttons {
+    grid-area: "buttons";
+    padding: 10%;
+    margin: 2px;
+}
+
+.online > img {
+    width: 50%;
+}
+
+.online > .buttons > button {
+    background-color: #ce181e;
+}
+
+.footer-explore {
+    padding-left: 20em;
+    padding-right: 20em;
+}
+
+.footer-explore ul {
+    display: inline-block;
+}
+
+.footer-explore li {
+    display: list-item;
+}
+
+.legal-info {
+    text-align: center;
 }
