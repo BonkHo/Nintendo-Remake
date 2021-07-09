@@ -1,7 +1,6 @@
 import NavBar from "./Components/Navbar/Navbar.js";
 import Body from "./Components/Body/Body.js";
 import Footer from "./Components/Footer/Footer.js";
-import GameData from "./stardewvalley.js";
 
 function App() {
     return (

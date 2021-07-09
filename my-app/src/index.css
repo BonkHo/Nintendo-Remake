@@ -9,6 +9,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 65%;
+    transform: translateY(1em);
+}
+
+.nav-foot {
+    border: 2px red;
 }
 
 .foot-button {
@@ -29,4 +34,58 @@
 
 .image-container {
     background-color: #d6f0fa;
+}
+
+.console {
+    font-size: 1em;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.game-info {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 5%;
+    padding-left: 15%;
+}
+
+.game-title {
+    font-size: 1.5em;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.avaliability {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.wish-list-container {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.price {
+    display: inline;
+    float: right;
+}
+
+.purchase-button {
+    display: inline;
+    float: right;
+    width: 49%;
+}
+
+.image-carousal-div {
+    background-color: #d6f0fa;
+    width: 100%;
+}
+
+.body-description {
+    padding: 6% 14% 3% 14%;
+}
+
+.body-description h1 {
+    font-size: 25px;
 }

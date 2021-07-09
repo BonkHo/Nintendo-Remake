@@ -2,8 +2,8 @@ import React from "react";
 
 const NavFoot = () => {
     return (
-        <div className="container-fluid text-center">
-            <ul className>
+        <div className="container-fluid text-center nav-foot">
+            <ul className="nav-foot">
                 <li className="nav-item dropdown list-inline-item">
                     <button id="games" className="nav-item foot-button">
                         Games
